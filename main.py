@@ -14,7 +14,7 @@ def id_search(id): #search by id
 
 
 @app.route("/skill/<skill>")
-def skill_search(skill):
+def skill_search(skill): # search by skill
 	str_candidate = ""
 	for candidate in data.values():
 		candidate_skills = candidate["skills"].split(" ,")
